@@ -1,3 +1,14 @@
+# Core dependencies (existing)
 groq>=0.9.0
-playwright>=1.44.0
+openai-agents>=0.17.0
+litellm>=1.60.0
+playwright>=1.45.0
 python-dotenv>=1.0.0
+
+# Production enhancements
+pydantic>=2.0.0        # Configuration validation with type checking
+structlog>=24.0.0     # Structured JSON logging with rotation support
+tenacity>=8.0.0        # Retry logic with exponential backoff
+fastapi>=0.110.0      # REST API layer for production deployment
+uvicorn[standard]>=0.29.0  # ASGI server for FastAPI
+prometheus-client>=0.20.0  # Metrics collection for monitoring
